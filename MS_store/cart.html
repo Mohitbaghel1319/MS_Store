@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Store | Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="w3-row header">
+            <div class="w3-col s2">
+                <img src="img/logo/logo - Copy.png" alt="logo" width="100px">
+            </div>
+            <div class="w3-col s6 w3-center">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="mens.html">Mens</a>
+                        </li>
+                        <li>
+                            <a href="women.html">Womens</a>
+                        </li>
+                        <li>
+                            <a href="products.html">All Products</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w3-col s4">
+                <div>
+                    <input type="text" placeholder="Search Items">
+                </div>
+            </div>
+            <div class="w3-col s2">
+                <div class="w3-row w3-center cart-main">
+                    <div class="w3-col s3"></div>
+                    <div class="w3-col s3">
+                        <a href="login.html"><i class="fa-solid fa-user fa-xl" ></i></a>
+                    </div>
+                    <div class="w3-col s3 count">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                        <span id="count"></span>
+                    </div>
+                    <div class="w3-col s3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w3-row row2">
+            <div class="w3-col s6 w3-center">
+                <img src="img/backgraunds/3.png" alt="" width="250px">
+            </div>
+            <div class="w3-col s6">
+                <div>
+                    <h2>Lowest Prices</h2>
+                    <h2>Best Quality Shopping</h2>
+                    <p>Empowering your choices, enriching your lifestyle - shop with confidence.</p>
+                </div>
+                <div>
+                    <button class="w3-btn w3-pink w3-hover-red w3-round">
+                        Explore now...
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </header>
+    <main>
+        <div id="maincart" class="w3-row">
+            <h2>Shopping Cart</h2>
+            <div class="w3-row">
+                <div id="cartdiv1" class="w3-col s4">
+                    <li>
+                        <div id="d1">
+                            <div>
+                                <img src="img/products/mens/shirts/1.jpg" alt="img1" id="ib1">
+                            </div>
+                            <div >
+                                 <h3>Karto Fashions</h3>
+                                 <p>Mens full Sleeve gray white touch shirt</p>
+                                 <p>Price - <span id="pb1" value="599">599/-</span></p>
+                            </div>
+                            <div id="remove">
+                                <button class="w3-btn w3-pink w3-hover-red" >Remove</button>
+                            </div>
+                        </div> 
+                    </li>
+                </div>
+                <div class="w3-col s2" id="price">
+                   
+                </div>
+                <div class="w3-col s2" id="cartdiv2">
+                    
+                </div>
+                <div class="w3-col s4" id="subtotal">
+                        <h1>Total Amount</h1>
+                        <span>Subtotal- </span>
+                        <span id="total"></span>
+                        <div>
+                            <a href="checkOut.html"><button class="w3-btn w3-blue w3-hover-red" onclick="Total()"><span>Check Out</span></button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="sec3">
+            <div class="w3-row">
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <img src="img/logo/logo - Copy.png" alt="" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">
+                            Discover your style at MS Store. Shop the latest trends in fashion for men, women, and kids. From everyday essentials to statement pieces, find everything you need to elevate your wardrobe. Your perfect outfit is just a click away!
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Get to Know Us</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top">About Us</li>
+                            <li class="w3-margin-top">Our Services</li>
+                            <li class="w3-margin-top">Our Products</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Connect with Us</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                            <li class="w3-margin-top"><i class="fa-brands fa-twitter"></i> Twitter</li>
+                            <li class="w3-margin-top"><i class="fa-brands fa-instagram"></i> Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Let Us Help You</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top">
+                                <p><span><i class="fa-solid fa-phone"></i> Phone: </span>+91 9865325263</p>
+                            </li>
+                            <li class="w3-margin-top">
+                                <p><i class="fa-solid fa-clock"></i> 24/7 support</p>
+                            </li>
+                            <li class="w3-margin-top">
+                                <p><span><i class="fa-solid fa-location-dot"></i> Address: </span>Freinds Tower, Sanjay Place, Agra, Uttar Pradesh, pincode - 282001 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="w3row w3-center">
+            <p>Copyrights © MS Store 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/cartdisplay.js"></script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Store | Mens Section</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="w3-row header">
+            <div class="w3-col s2">
+                <img src="img/logo/logo - Copy.png" alt="logo" width="100px">
+            </div>
+            <div class="w3-col s6 w3-center">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="mens.html">Mens</a>
+                        </li>
+                        <li>
+                            <a href="women.html">Womens</a>
+                        </li>
+                        <li>
+                            <a href="products.html">All Products</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w3-col s4">
+                <div>
+                    <input type="text" placeholder="Search Items">
+                </div>
+            </div>
+            <div class="w3-col s2">
+                <div class="w3-row w3-center cart-main">
+                    <div class="w3-col s3"></div>
+                    <div class="w3-col s3">
+                        <a href="login.html"><i class="fa-solid fa-user fa-xl" ></i></a>
+                    </div>
+                    <div class="w3-col s3 count">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                        <span id="count"></span>
+                    </div>
+                    <div class="w3-col s3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w3-row row2">
+            <div class="w3-col s6 w3-center">
+                <img src="img/backgraunds/3.png" alt="" width="250px">
+            </div>
+            <div class="w3-col s6">
+                <div>
+                    <h2>Lowest Prices</h2>
+                    <h2>Best Quality Shopping</h2>
+                    <p>Empowering your choices, enriching your lifestyle - shop with confidence.</p>
+                </div>
+                <div>
+                    <button class="w3-btn w3-pink w3-hover-red w3-round">
+                        Explore now...
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </header>
+    <main>
+        <section class="sec1">
+            <div class="w3-center">
+                <h1 class="hd-1">Mens Wear</h1>
+            </div>
+            <div class="w3-row item-container">
+                <div class="w3-col s3 w3-center items">
+                    <div id="b1">
+                        <div>
+                            <img src="img/products/mens/shirts/1.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b1', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b2">
+                        <div>
+                            <img src="img/products/mens/shirts/2.jpg" alt="img1">
+                        </div>
+                        <div>
+                            <h3>Karto Fashions</h3>
+                            <p>Mens gray touch shirt</p>
+                            <p>Price - <span>499/-</span></p>
+                       </div>
+                    </div>
+                    <button id="b2" class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b2', 499);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b3">
+                        <div>
+                            <img src="img/products/mens/shirts/3.jpg" alt="img1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve Yellow shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b3', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b4">
+                        <div>
+                            <img src="img/products/mens/shirts/4.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve white shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b4', 599);">Add to cart</button>
+                </div>
+            </div>
+            <div class="w3-row item-container">
+                <div class="w3-col s3 w3-center items">
+                    <div id="b5">
+                        <div>
+                            <img src="img/products/mens/shirts/5.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b5', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b6">
+                        <div>
+                            <img src="img/products/mens/shirts/6.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens khakhi shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b6', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b7">
+                        <div>
+                            <img src="img/products/mens/shirts/7.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeves check shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b7', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b8">
+                        <div>
+                            <img src="img/products/mens/shirts/8.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens Green printed shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b8', 599);">Add to cart</button>
+                </div>
+            </div>
+            <div class="w3-row item-container">
+                <div class="w3-col s3 w3-center items">
+                    <div id="b9">
+                        <div>
+                            <img src="img/products/mens/shirts/9.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b9', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b10">
+                        <div>
+                            <img src="img/products/mens/shirts/10.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b10', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b11">
+                        <div>
+                            <img src="img/products/mens/shirts/11.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b11', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="b12">
+                        <div>
+                            <img src="img/products/mens/shirts/12.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('b12', 599);">Add to cart</button>
+                </div>
+            </div>
+            <div class="w3-row item-container">
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt1">
+                        <div>
+                            <img src="img/products/mens/Tshirts/1.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt1', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt2">
+                        <div>
+                            <img src="img/products/mens/Tshirts/2.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt2', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt3">
+                        <div>
+                            <img src="img/products/mens/Tshirts/3.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt3', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt4">
+                        <div>
+                            <img src="img/products/mens/Tshirts/4.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt4', 599);">Add to cart</button>
+                </div>
+            </div>
+            <div class="w3-row item-container">
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt5">
+                        <div>
+                            <img src="img/products/mens/Tshirts/5.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt5', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt6">
+                        <div>
+                            <img src="img/products/mens/Tshirts/6.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt6', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt7">
+                        <div>
+                            <img src="img/products/mens/Tshirts/7.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt7', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt8">
+                        <div>
+                            <img src="img/products/mens/Tshirts/8.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt8', 599);">Add to cart</button>
+                </div>
+            </div>
+            <div class="w3-row item-container">
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt9">
+                        <div>
+                            <img src="img/products/mens/Tshirts/9.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt9', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt10">
+                        <div>
+                            <img src="img/products/mens/Tshirts/10.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt10', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt11">
+                        <div>
+                            <img src="img/products/mens/Tshirts/11.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt11', 599);">Add to cart</button>
+                </div>
+                <div class="w3-col s3 w3-center items">
+                    <div id="bt12">
+                        <div>
+                            <img src="img/products/mens/Tshirts/12.jpg" alt="img1" id="ib1">
+                        </div>
+                        <div >
+                             <h3>Karto Fashions</h3>
+                             <p>Mens full Sleeve gray white touch shirt</p>
+                             <p>Price - <span id="pb1" value="599">599/-</span></p>  
+                        </div>
+                    </div>
+                    <button class="w3-btn w3-pink w3-hover-red" onclick="addToCart('bt12', 599);">Add to cart</button>
+                </div>
+            </div>
+            <!-- <div class="w3-row w3-center">
+                <a href="#"><button class="w3-btn w3-pink w3-hover-red">View more...</button></a>
+            </div> -->
+        </section>
+    </main>
+    <footer>
+        <section class="sec3">
+            <div class="w3-row">
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <img src="img/logo/logo - Copy.png" alt="" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">
+                            Discover your style at MS Store. Shop the latest trends in fashion for men, women, and kids. From everyday essentials to statement pieces, find everything you need to elevate your wardrobe. Your perfect outfit is just a click away!
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Get to Know Us</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top">About Us</li>
+                            <li class="w3-margin-top">Our Services</li>
+                            <li class="w3-margin-top">Our Products</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Connect with Us</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                            <li class="w3-margin-top"><i class="fa-brands fa-twitter"></i> Twitter</li>
+                            <li class="w3-margin-top"><i class="fa-brands fa-instagram"></i> Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Let Us Help You</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top">
+                                <p><span><i class="fa-solid fa-phone"></i> Phone: </span>+91 9865325263</p>
+                            </li>
+                            <li class="w3-margin-top">
+                                <p><i class="fa-solid fa-clock"></i> 24/7 support</p>
+                            </li>
+                            <li class="w3-margin-top">
+                                <p><span><i class="fa-solid fa-location-dot"></i> Address: </span>Freinds Tower, Sanjay Place, Agra, Uttar Pradesh, pincode - 282001 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="w3row w3-center">
+            <p>Copyrights © MS Store 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/cartdisplay.js"></script>
+</body>
+</html>

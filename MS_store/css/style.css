@@ -1,0 +1,276 @@
+:root{
+    --pricolor: #E63397;
+    --seccolor: #ecccde;
+    --tadcolor: blue;
+    --textcolor1: white;
+
+
+
+}
+
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.hd-1{
+    font-weight: bolder;
+    font-size: 45PX;
+    margin: 0px;
+    padding: 0px; 
+}
+#header{
+    height: 45vw;
+    background-image: linear-gradient(to right, #ecccde, #E63397);
+}
+
+.header{
+    height: 50px;
+    background-color: var(--pricolor);
+    display: flex;
+    position: sticky;
+}
+li{
+    list-style: none;
+}
+
+.nav ul{
+    display: inline-block;
+
+}
+.nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: var(--textcolor1);
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--textcolor1);
+}
+.header input{
+    margin-top: 7px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 90%;
+    border: none;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.row2 div{
+    padding: 30px;
+    padding-right: 30px;
+}
+
+.row2 h2{
+    font-weight: bolder;
+    font-size: 45PX;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row2 p{
+    color: var(--textcolor1);
+    font-size: 20PX;
+    margin-top: 20px;
+}
+
+.sec1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+.sec3{
+    /* margin-top: 30px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left:100px;
+    padding-right:100px;
+    background-color: #242424;
+    color: white;
+}
+.sec1 .row2 img{
+    width: 100%;
+}
+
+.item-container{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 5px;
+    /* border: 1px solid rgb(156, 156, 156); */
+}
+
+.item-container .items img{
+    
+    height: 300px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.item-container div div {
+    width: 250px;
+}
+.item-container span{
+    /* font-weight: bold; */
+    font-size: 20px;
+    color: #E63397;
+}
+
+.items:hover{
+    background-color: #ecccde;
+}
+
+.sec2{
+    background-image: linear-gradient(to right, #ecccde, #E63397);
+    height: 350px;
+    margin-top: 50px;
+}
+
+.fd-1{
+    padding-right: 25px;
+}
+
+.w3row{
+    background-color: var(--pricolor);
+    padding: 10px;
+}
+
+.extra{
+    display: none;
+    position:absolute;
+    height: 481px;
+    width: 321px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.extra h2{
+    margin-top: 200px;
+}
+
+.w3-col:hover{
+    .extra{
+        display: block;
+    }
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.cart-main{
+    margin-top: 10px;
+    color: white;
+}
+
+.review{
+    background-color: var(--pricolor);
+    border-radius: 20px 0px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+/* #maincart{
+    margin: 20px;
+    background-color: #ecccde;
+} */
+#cartdiv1 li{
+    padding: 20px 35px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+}
+#cartdiv1 img{
+    height: 150px;
+    object-fit: contain;
+}
+
+#cartdiv2 li{
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+#price li{
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+#subtotal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin: 30px 0px;
+    padding: 30px 0px;
+}
+
+#subtotal span{
+    font-weight: bold;
+
+}
+
+.headings div{
+    border: 1px solid black;
+}
+
+.count{
+    display: flex;
+}
+
+.count span{
+    display: inline-block;
+    width: 22px;
+    background-color: red;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#maincart .sec1>div{
+    border-bottom: 2px solid gray;
+}
+
+
+/* media query start */
+
+@media screen and (max-width: 580px) {
+    .w3-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .w3-col.s4 {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .w3-col.s4 div{
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .w3-col.s3 {
+        width: 100%;
+        padding: 10px;
+    }
+    .pd-100{
+        padding-left: 0px;
+    padding-right: 0px;
+    }
+
+  }

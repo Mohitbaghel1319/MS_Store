@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Store | Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="w3-row header">
+            <div class="w3-col s2">
+                <img src="img/logo/logo - Copy.png" alt="logo" width="100px">
+            </div>
+            <div class="w3-col s6 w3-center">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="mens.html">Mens</a>
+                        </li>
+                        <li>
+                            <a href="women.html">Womens</a>
+                        </li>
+                        <li>
+                            <a href="products.html">All Products</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w3-col s4">
+                <div>
+                    <input type="text" placeholder="Search Items">
+                </div>
+            </div>
+            <div class="w3-col s2">
+                <div class="w3-row w3-center cart-main">
+                    <div class="w3-col s3"></div>
+                    <div class="w3-col s3">
+                        <a href="login.html"><i class="fa-solid fa-user fa-xl" ></i></a>
+                    </div>
+                    <div class="w3-col s3 count">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                        <span id="count"></span>
+                    </div>
+                    <div class="w3-col s3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w3-row row2">
+            <div class="w3-col s6 w3-center">
+                <img src="img/backgraunds/3.png" alt="" width="250px">
+            </div>
+            <div class="w3-col s6">
+                <div>
+                    <h2>Lowest Prices</h2>
+                    <h2>Best Quality Shopping</h2>
+                    <p>Empowering your choices, enriching your lifestyle - shop with confidence.</p>
+                </div>
+                <div>
+                    <button class="w3-btn w3-pink w3-hover-red w3-round">
+                        Explore now...
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </header>
+    <main>
+        <div id="maincart" class="w3-row">
+            <h2 class="w3-center">Check Out</h2>
+            <div class="w3-row">
+                <div class="w3-col s8">
+                    <div class="w3-row sec1">
+                        <div>
+                            <h2 class="w3-text-red">1 Select a delivery address</h2>
+                            <div id="showAdd"><h3>Your Address Saved</h3></div>
+                            <a href="#" onclick="address()"><p class="w3-text-blue"> + Add delivery address</p></a>
+                            <div id="detailForm">
+                                <form action="">
+                                    <div class="pd20">
+                                        <label for="Name">Full Name (First and Last Name)</label>
+                                        <input type="text" id="textName2" placeholder=""><br>
+                                        <span class="w3-text-red" id="errName2"></span>
+                                    </div>
+                                    <div class="pd20">
+                                        <label for="Name">Mobile Number</label>
+                                        <input type="text" id="textNumber2" placeholder=""><br>
+                                        <span class="w3-text-red" id="errNumber2"></span>
+                                    </div>
+                                    <div class="pd20">
+                                        <label for="Name">Pincode</label>
+                                        <input type="text" id="textPin" placeholder="6 digits [0-9] PIN code"><br>
+                                        <span class="w3-text-red" id="errPin"></span>
+                                    </div>
+                                    <div class="pd20">
+                                        <label for="Name">Flat, House no., Building, Apartment</label>
+                                        <input type="text" id="textAdd" placeholder=""><br>
+                                        <span class="w3-text-red" id="errAdd"></span>
+                                    </div>
+                                    <div class="pd20">
+                                        <label for="Name">Area, Street, Secter, Village & City</label>
+                                        <input type="text" id="textArea" placeholder=""><br>
+                                        <span class="w3-text-red" id="errArea"></span>
+                                    </div>
+                                    <div class="pd20">
+                                        <label for="Name">Landmark</label>
+                                        <input type="text" id="textLand" placeholder="E.g. near Gas Agency"><br>
+                                        <span class="w3-text-red" id="errLand"></span>
+                                    </div>
+                                    
+                                    <div class="pd20">
+                                        <button type="button" class="w3-btn w3-pink w3-hover-red w3-round" onclick="addSubmit()">Submit    </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="w3-text-red">2 Payment methods</h2>
+                            <a href="#" onclick="displayPayment()"><p class="w3-text-blue"> + Select payment method</p></a>
+                            <div id="pay-mathod">
+                                <form action="" class="form-radio">
+                                    <span class=""><input type="radio" name="pay-method" class="form-radio" onclick="PaymentOff()"  >Cash on delivery / Pay on delivery</span>
+                                    <span class=""><input type="radio" name="pay-method" class="form-radio" onclick="Payment()">Credit or Debit card</span>
+                                    <div id="showPayment"><h3>Payment type saved</h3></div>
+                                    <div id="cardPayment">
+                                        <form action="">
+                                            <div class="divrow">
+                                                <label for="Name">Cardholder Name</label>
+                                                <input type="text" placeholder="">
+                                            </div>
+                                            <div class="divrow">
+                                                <label for="Name">Card Number</label>
+                                                <input type="number" placeholder="">
+                                            </div>
+                                            <div class="pd20" id="card-date">
+                                                <div class="">
+                                                    <label for="Name" class="w3-center">End month</label>
+                                                    <input type="number" placeholder="mm">
+                                                </div>
+                                                <div class="">
+                                                    <label for="Name" class="w3-center">End Year</label>
+                                                    <input type="number" placeholder="yyyy">
+                                                </div>
+                                                <div class="">
+                                                    <label for="Name" class="w3-center">CVV</label>
+                                                    <input type="number" placeholder="***">
+                                                </div>
+                                            </div>
+                                            <div class="checkbox1">
+                                                <input type="checkbox"><span>I have read and accept the terms of use, rules of privecy policy</span>
+                                            </div>
+                                            <div class="pd20">
+                                                <button type="button" class="w3-btn w3-green w3-hover-red w3-round" onclick="PaymentOff()">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="w3-text-red">3 Place order</h2>
+                            <div class="pd20" id="PlaceOdr">
+                                <button type="button" class="w3-btn w3-red w3-hover-green w3-round" onclick="placeOdrOff()">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row">
+
+                    </div>
+                </div>                
+                <div class="w3-col s4" id="booked">
+                        <div id="bookDisplay" class="w3-center">
+                            <h2 class="w3-text-red">!!Thank You!!</h2>
+                            <p class="">Your order booked sucssesfully!!</p>
+                            <p class="">It will deliverd soon...</p>
+                            <a href="index.html"><button type="button" class="w3-btn w3-pink w3-hover-red w3-block w3-margin-top">Back to Home</button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="sec3">
+            <div class="w3-row">
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <img src="img/logo/logo - Copy.png" alt="" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">
+                            Discover your style at MS Store. Shop the latest trends in fashion for men, women, and kids. From everyday essentials to statement pieces, find everything you need to elevate your wardrobe. Your perfect outfit is just a click away!
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Get to Know Us</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top">About Us</li>
+                            <li class="w3-margin-top">Our Services</li>
+                            <li class="w3-margin-top">Our Products</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Connect with Us</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                            <li class="w3-margin-top"><i class="fa-brands fa-twitter"></i> Twitter</li>
+                            <li class="w3-margin-top"><i class="fa-brands fa-instagram"></i> Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w3-col s3 fd-1 w3-center">
+                    <div>
+                        <h3>Let Us Help You</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="w3-margin-top">
+                                <p><span><i class="fa-solid fa-phone"></i> Phone: </span>+91 9865325263</p>
+                            </li>
+                            <li class="w3-margin-top">
+                                <p><i class="fa-solid fa-clock"></i> 24/7 support</p>
+                            </li>
+                            <li class="w3-margin-top">
+                                <p><span><i class="fa-solid fa-location-dot"></i> Address: </span>Freinds Tower, Sanjay Place, Agra, Uttar Pradesh, pincode - 282001 </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="w3row w3-center">
+            <p>Copyrights © MS Store 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/cartdisplay.js"></script>
+    <script src="js/cartdisplay.js"></script>
+    <script src="js/validate.js"></script>
+</body>
+</html>

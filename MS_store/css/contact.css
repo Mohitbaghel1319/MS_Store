@@ -1,0 +1,334 @@
+:root{
+    --pricolor: #E63397;
+    --seccolor: #ecccde;
+    --tadcolor: blue;
+    --textcolor1: white;
+    --textcolor2: black;
+
+
+
+}
+
+
+.row{
+    display: flex;
+    background-color: rgb(63, 63, 63);
+    /* height: 600px; */
+    /* width: 800px; */
+    margin: 20px 100px;
+    padding: 40px 0px;
+    border-radius: 20px;
+    color: var(--textcolor1);
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    /* height: 600px; */
+    width: 100%;
+}
+
+#details{
+    /* background-image: linear-gradient(to right, #2c2c2c, #454545); */
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#querry{
+    /* background-image: linear-gradient(to right, #112992, #302f2f); */
+    border-left: 2px solid white    ;
+    /* border-radius: 20px; */
+}
+
+.pd20{
+    margin: 10px 0px;
+    padding: 0px 20px;
+}
+
+
+#querry div{
+    margin: 10px 60px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#querry div label{
+    color: var(--textcolor1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#querry div input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#querry div textarea{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+/* login page start */
+
+.cont{
+    margin: 20px 400px;
+    padding: 20px 0px;
+    border-radius: 5px;
+    border: 1px solid var(--pricolor);
+    color: var(--textcolor2);
+    background-color: white;
+}
+
+#signin{
+    border-right: 2px solid var(--textcolor2);
+}
+
+#signin:hover{
+    text-decoration: underline;
+}
+#login:hover{
+    text-decoration: underline;
+}
+
+#sign-in{
+    display: block;
+}
+
+#sign-in div{
+    margin: 10px 60px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#sign-in div label{
+    color: var(--textcolor1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#sign-in div input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 1px solid gray;
+
+
+}
+
+#log-in{
+    display: none;
+}
+
+#log-in div{
+    margin: 10px 60px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#log-in div label{
+    color: var(--textcolor1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#log-in div input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+#detailForm{
+    display: none;
+}
+
+#detailForm div{
+    margin: 5px 60px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#detailForm div label{
+    color: var(--textcolor2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#detailForm div input{
+    width: 60%;
+    margin: 0px 0px;
+    padding: 5px 15px;
+    /* border-radius: 10px; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+#detailForm div button{
+    width: 60%;
+}
+
+#pay-mathod{
+    display: none;
+}
+
+#pay-mathod span{
+    display: block;
+}
+#pay-mathod .form-radio{
+    margin: 20px;
+}
+
+#cardPayment{
+    display: none;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#cardPayment button{
+    width: 87%;
+}
+
+.divrow{
+    display: flex;
+    flex-direction: column;
+}
+.divrow input{
+    width: 85%;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#card-date{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+#card-date div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#card-date div input{
+    width: 100px;
+    padding: 10px 20px;
+}
+.checkbox1{
+    display: flex;
+    gap: 20px;
+}
+
+#PlaceOdr{
+    display: none;
+}
+
+#showAdd{
+    display: none;
+}
+#showPayment{
+    display: none;
+}
+
+#booked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    height: 300px;
+}
+
+#booked h2{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#booked p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#bookDisplay{
+    display: none;
+}
+
+/* Contactpage2 style  */
+
+.dis-flex{
+    display: flex;
+    gap: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 100px 200px;
+    /* background-color: antiquewhite; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cont_sec{
+    display: flex;
+}
+.details{
+    /* width: 400px; */
+    padding: 30px 30px;
+    color: white;
+}
+.details span{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.details i{
+    margin: 25px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.details p{
+    font-size: 1.1em;
+    margin: 20px 0px;
+}
+
+.formate{
+    background-color: white;
+}
+.formate input{
+    padding: 10px;
+    margin: 15px 20px; 
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.formate textarea{
+    padding: 10px;
+    margin: 15px 20px; 
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid gray;
+}

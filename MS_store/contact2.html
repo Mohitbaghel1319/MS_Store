@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dis-flex{
+            display: flex;
+            gap: 15px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 100px 200px;
+            /* background-color: antiquewhite; */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .cont_sec{
+            display: flex;
+        }
+        .details{
+            /* width: 400px; */
+            padding: 30px 30px;
+            color: white;
+        }
+        .details span{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .details i{
+            margin: 20px 0px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .details p{
+            font-size: 1.1em;
+        }
+
+        .formate{
+            background-color: white;
+        }
+        .formate input{
+            padding: 10px;
+            margin: 15px 20px; 
+            width: 70%;
+            border: none;
+            border-bottom: 2px solid gray;
+        }
+        .formate textarea{
+            padding: 10px;
+            margin: 15px 20px; 
+            width: 70%;
+            border: none;
+            border-bottom: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container w3-light-gray">
+            <div class="w3-row cont_sec">
+                <div class="w3-col s6 details w3-green">
+                    <div>
+                        <div>
+                            <h2 class="w3-center">Contact Us</h2>
+                            <p>Thank you for visiting MS Store! We're here to assist you with any questions, concerns, or feedback you may have.</p>
+                        </div>
+                        <div class="dis-flex">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p></i><span>Address: </span>Freinds Tower, Sanjay Place, Agra, Uttar Pradesh, pincode - 282001 </p>
+                        </div>
+                        <div class="dis-flex">
+                            <i class="fa-solid fa-phone"></i>
+                            <p><span>Phone: </span>+91 9865325263, +91 8909652536</p>
+                        </div>
+                        <div class="dis-flex">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p><span>Email: </span>info@msstore.in, msstore@gmail.com</p>
+                        </div>
+                        <div class="dis-flex">
+                            <i class="fa-solid fa-earth-oceania"></i>
+                            <p><span>Website: </span>msstore.in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col s6 formate">
+                    <form action="">
+                        <div><h2 class="w3-center">Get in Touch</h2></div>
+                        <div class="w3-center">
+                            <input type="text" placeholder="Full name">
+                        </div>
+                        <div class="w3-center">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="w3-center">
+                            <input type="number" placeholder="Phone Number">
+                        </div>
+                        <div class="w3-center">
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Send a message"></textarea>
+                        </div>
+                        <div class="w3-center">
+                            <button class="w3-btn w3-green ">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
